@@ -1,1 +1,10 @@
-/* You can add global styles to this file, and also import other style files */
+/* Global styles*/
+html, body {
+  margin: 10px;
+  background-color: var(--surface-b); /*Lee las variables de primeng definidas en theme.css*/
+  font-family: var(--font-family);
+}
+
+.text-layout {
+  color: var(--text-color);
+}

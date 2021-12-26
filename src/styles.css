@@ -8,3 +8,18 @@ html, body {
 .text-layout {
   color: var(--text-color);
 }
+
+.subtitle-layout {
+  text-align: center;
+  background-color: var(--surface-a);
+  color: var(--primary-color);
+}
+
+.title-layout {
+  color: #326fd1;
+}
+
+.url-layout {
+  color: #3b82f6;
+  padding-left: 20px;
+}

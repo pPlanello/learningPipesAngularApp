@@ -1,0 +1,87 @@
+<div class="text-layout">
+
+  <h1>Pipes Básicos</h1>
+
+  <p> Pipes incluídos en Angular. <small>Normalmente en el Common Module</small> </p>
+  <a href="https://angular.io/guide/pipes">Pipes de Angular</a>
+
+  <h2>Textos</h2>
+  <p> Pipes para mostrar textos</p>
+</div>
+
+<div class="grid">
+  <div class="col-4">
+    <p-card
+      header="TitleCase"
+      [subheader]="nameComplete">
+      {{ nameComplete | titlecase }}
+    </p-card>
+  </div>
+  <div class="col-4">
+    <p-card
+      header="UpperCase"
+      [subheader]="nameLower">
+      {{ nameLower | uppercase }}
+    </p-card>
+  </div>
+  <div class="col-4">
+    <p-card
+      header="LowerCase"
+      [subheader]="nameUpper">
+      {{ nameUpper | lowercase }}
+    </p-card>
+  </div>
+</div>
+
+<hr>
+
+<div class="text-layout">
+  <h2>Fechas</h2>
+  <p> Pipes para mostrar fechas</p>
+</div>
+
+<div class="grid">
+  <div class="col-12">
+    <p-card>
+      <ul>
+        <li class="grid">
+          <div class="col-6">Fecha</div>
+          <div class="col-6">{{ actualDate }}</div>
+        </li>
+        <li class="grid">
+          <div class="col-6">Fecha | date</div>
+          <div class="col-6">{{ actualDate | date }}</div>
+        </li>
+        <li class="grid">
+          <div class="col-6">Fecha | date:'short'</div>
+          <div class="col-6">{{ actualDate | date:'short' }}</div>
+        </li>
+        <li class="grid">
+          <div class="col-6">Fecha | date:'long'</div>
+          <div class="col-6">{{ actualDate | date:'long' }}</div>
+        </li>
+        <li class="grid">
+          <div class="col-6">Fecha | date:'dd/MM/yyyy'</div>
+          <div class="col-6">{{ actualDate | date:'dd/MM/yyyy' }}</div>
+        </li>
+        <hr>
+        <li class="grid">
+          <div class="col-6">Fecha | date:'long':'GMT-6'</div>
+          <div class="col-6">{{ actualDate | date:'long':'GMT-6' }}</div>
+        </li>
+        <li class="grid">
+          <div class="col-6">Fecha | date:'long':'':'en'</div>
+          <div class="col-6">{{ actualDate | date:'long':'':'en' }}</div>
+        </li>
+        <li class="grid">
+          <div class="col-6">Fecha | date:'long':'':'es'</div>
+          <div class="col-6">{{ actualDate | date:'long':'':'es' }}</div>
+        </li>
+        <li class="grid">
+          <div class="col-6">Fecha | date:'long':'':'fr'</div>
+          <div class="col-6">{{ actualDate | date:'long':'':'fr' }}</div>
+        </li>
+      </ul>
+    </p-card>
+  </div>
+</div>

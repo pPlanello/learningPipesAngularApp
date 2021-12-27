@@ -1,9 +1,9 @@
 <div class="text-layout">
 
-  <h1 class="title-layout">Pipes Básicos</h1>
+  <h1>Pipes Básicos</h1>
 
   <p> Pipes incluídos en Angular. <small>Normalmente en el Common Module</small> </p>
-  <a class="url-layout" href="https://angular.io/guide/pipes">Pipes de Angular</a>
+  <a href="https://angular.io/guide/pipes">Pipes de Angular</a>
 
   <h2 class="subtitle-layout">Textos</h2>
   <p> Pipes para mostrar textos</p>
@@ -12,22 +12,22 @@
 <div class="grid">
   <div class="col-4">
     <p-card
-      header="TitleCase"
-      [subheader]="nameComplete">
+        header="TitleCase"
+        [subheader]="nameComplete">
       {{ nameComplete | titlecase }}
     </p-card>
   </div>
   <div class="col-4">
     <p-card
-      header="UpperCase"
-      [subheader]="nameLower">
+        header="UpperCase"
+        [subheader]="nameLower">
       {{ nameLower | uppercase }}
     </p-card>
   </div>
   <div class="col-4">
     <p-card
-      header="LowerCase"
-      [subheader]="nameUpper">
+        header="LowerCase"
+        [subheader]="nameUpper">
       {{ nameUpper | lowercase }}
     </p-card>
   </div>

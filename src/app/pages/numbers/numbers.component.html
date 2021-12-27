@@ -1,1 +1,82 @@
-<p>numbers works!</p>
+<div class="text-layout">
+
+  <h1>Pipes Numéricos</h1>
+
+  <p> Pipes incluídos en Angular. <small>Normalmente en el Common Module</small> </p>
+  <a href="https://angular.io/guide/pipes">Pipes de Angular</a>
+</div>
+
+<div class="text-layout">
+  <h2 class="subtitle-layout">Numeros</h2>
+  <p> Pipes para mostrar textos</p>
+</div>
+
+<div class="grid">
+  <div class="col-6">
+    <p-card
+        header="Number"
+        [subheader]="number.toString()">
+      {{ number | number }}
+    </p-card>
+  </div>
+
+  <div class="col-6">
+    <p-card
+        header="Specific Number"
+        [subheader]="number.toString()">
+      {{ number | number:'1.2-2' }}
+    </p-card>
+  </div>
+</div>
+
+<hr>
+
+<!-- Monedas -->
+<div class="text-layout">
+  <h2>Monedas</h2>
+  <p> Pipes para mostrar monedas</p>
+</div>
+
+<div class="grid">
+  <div class="col-6">
+    <p-card
+      header="Currency"
+      [subheader]="number.toString()">
+      {{ number | currency }}
+    </p-card>
+  </div>
+
+  <div class="col-6">
+    <p-card
+      header="Specific Currency"
+      [subheader]="number.toString()">
+      {{ number | currency:'EUR':'symbol-narrow':'1.4-4' }}
+    </p-card>
+  </div>
+</div>
+
+<hr>
+
+<!-- Porcentages -->
+<div class="text-layout">
+  <h2>Porcentages</h2>
+  <p> Pipes para mostrar porcentages</p>
+</div>
+
+<div class="grid">
+  <div class="col-6">
+    <p-card
+      header="Percentage"
+      [subheader]="percentage.toString()">
+      {{ percentage | percent }}
+    </p-card>
+  </div>
+
+  <div class="col-6">
+    <p-card
+      header="Specific Percentage"
+      [subheader]="percentage.toString()">
+      {{ percentage | percent:'2.2-2' }}
+    </p-card>
+  </div>
+</div>

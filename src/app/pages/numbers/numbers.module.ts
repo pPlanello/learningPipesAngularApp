@@ -1,12 +1,17 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { PrimeNgModule } from 'src/app/prime-ng/prime-ng.module';
+import { NumbersComponent } from './numbers.component';
 
 
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    NumbersComponent
+  ],
   imports: [
-    CommonModule
+    CommonModule,
+    PrimeNgModule
   ]
 })
 export class NumbersModule { }
